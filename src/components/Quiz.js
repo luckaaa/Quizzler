@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import {motion} from 'framer-motion'
 import '../App.css'
-import App, {ThemeContext} from '../App'
+import {ThemeContext} from '../App'
 import Confetti from 'react-confetti'
 import Modal from '../components/Modal';
 
