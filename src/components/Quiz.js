@@ -36,13 +36,11 @@ function Quiz() {
             setScore(score + 1);
             
         }
+		setTimeout (() => {setCurrentQuestion(currentQuestion +1)}, 3000);
         setOpenModal(true);
-        //set timeout before next question
-        setTimeout (() => {setCurrentQuestion(currentQuestion +1)}, 1700);
        
 	}
     
-
 	const handleRestart = () => {
 		setCurrentQuestion(0);
 		setScore(0);
@@ -79,7 +77,11 @@ function Quiz() {
 
                             </motion.div>
                             <Modal open={openModal}
-                                onClose={() => setOpenModal(false)} />
+                                onClose={() => setOpenModal(false)}
+								corrAnswer={questions[currentQuestion].correct_answer}
+								close ={setTimeout(() => setOpenModal(false), 3000)}
+								/>
+								
                         
 						</div>
 						: <div>

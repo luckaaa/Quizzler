@@ -395,3 +395,13 @@ img {
     margin: 1rem;
   }
 }
+
+.correctAnswer {
+  color: #fdbb2d;
+}
+
+.EinsteinAnswer{
+  color: #2d31fa;
+  font-size: 2rem;
+  font-weight: 600;
+}
